@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Heart, ShieldCheck, MapPin, Calendar, Users, ArrowRight, Star, Sparkles } from 'lucide-react';
+import { getAssetUrl } from '../utils/asset';
 
 interface HeroProps {
   onOpenBooking: (pkgTitle?: string) => void;
@@ -34,7 +35,7 @@ Please share the detailed itinerary and best price quotation.`;
       {/* Background Cinematic Image with Ken Burns / Parallax effect */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/shimla_sunset_balcony.jpg"
+          src={getAssetUrl('/images/shimla_sunset_balcony.jpg')}
           alt="Luxury Resort Balcony Sunset View in Himachal Pradesh"
           className="w-full h-full object-cover object-center filter brightness-[0.65] contrast-[1.08] scale-105 transition-transform duration-1000"
         />

@@ -1,3 +1,5 @@
+import { getAssetUrl } from '../utils/asset';
+
 export interface PackageItem {
   id: string;
   title: string;
@@ -22,7 +24,7 @@ export const PACKAGES_DATA: PackageItem[] = [
     category: 'honeymoon',
     startingPricePerCouple: 21999,
     featured: true,
-    heroImage: '/images/shimla_sunset_balcony.jpg',
+    heroImage: getAssetUrl('/images/shimla_sunset_balcony.jpg'),
     badge: '❤️ #1 BESTSELLER FOR COUPLES',
     highlights: [
       'Dedicated Sanitized Private Cab (Delhi / Chandigarh Pickup & Drop)',
@@ -58,7 +60,7 @@ export const PACKAGES_DATA: PackageItem[] = [
     category: 'luxury',
     startingPricePerCouple: 28999,
     featured: true,
-    heroImage: '/images/manali_wooden_suite.jpg',
+    heroImage: getAssetUrl('/images/manali_wooden_suite.jpg'),
     badge: '👑 ULTRA LUXURY EXPERIENCE',
     highlights: [
       'Toyota Innova Crysta / Premium Sedan from Pickup to Drop',
@@ -94,7 +96,7 @@ export const PACKAGES_DATA: PackageItem[] = [
     category: 'budget',
     startingPricePerCouple: 13999,
     featured: false,
-    heroImage: '/images/pine_forest_terrace.jpg',
+    heroImage: getAssetUrl('/images/pine_forest_terrace.jpg'),
     badge: '⚡ POPULAR WEEKEND GETAWAY',
     highlights: [
       'Comfortable Pickup from Kalka, Chandigarh or Delhi',
@@ -124,7 +126,7 @@ export const PACKAGES_DATA: PackageItem[] = [
     category: 'family',
     startingPricePerCouple: 17999,
     featured: false,
-    heroImage: '/images/destinations/manali.jpg',
+    heroImage: getAssetUrl('/images/destinations/manali.jpg'),
     badge: '❄️ SNOW & ADVENTURE SPECIAL',
     highlights: [
       'Direct Private Cab from Chandigarh / Delhi to Manali',
@@ -186,28 +188,28 @@ export const HOTEL_GALLERY = [
   {
     name: 'Hadimba Pine Luxury Wooden Suite',
     location: 'Old Manali, Himachal Pradesh',
-    image: '/images/manali_wooden_suite.jpg',
+    image: getAssetUrl('/images/manali_wooden_suite.jpg'),
     type: 'Luxury Wooden Suite',
     features: ['Panoramic Snow Balcony', 'Cedar Wood Interior', 'Room Heater', 'King Size Bed'],
   },
   {
     name: 'Sunset Valley Glass Terrace Resort',
     location: 'Mashobra, Shimla Hills',
-    image: '/images/shimla_sunset_balcony.jpg',
+    image: getAssetUrl('/images/shimla_sunset_balcony.jpg'),
     type: 'Valley View Luxury Stay',
     features: ['Sunset Cloud View', 'Glass Balcony Lounge', 'Fine Dining Cafe', 'Bonfire Garden'],
   },
   {
     name: 'Pine Crest Garden Cafe & Resort',
     location: 'Shimla - Kufri Road',
-    image: '/images/pine_forest_terrace.jpg',
+    image: getAssetUrl('/images/pine_forest_terrace.jpg'),
     type: 'Alpine Garden Resort',
     features: ['Pine Woods Setting', 'Open Air Mountain Cafe', 'Kids Play Zone', 'Peaceful Serenity'],
   },
   {
     name: 'Himalayan Orchard Dining Stay',
     location: 'Kullu - Manali Highway',
-    image: '/images/mountain_dining.jpg',
+    image: getAssetUrl('/images/mountain_dining.jpg'),
     type: 'Orchard Valley Retreat',
     features: ['Riverside Lawn', 'Candlelight Dining', 'Mountain Backdrop', 'Apple Orchard Walk'],
   },
@@ -219,7 +221,7 @@ export const CAB_OPTIONS = [
     category: 'Sedan (Best for Couples)',
     capacity: '2-3 Passengers + 2 Bags',
     idealFor: 'Couples, Honeymooners, Small Budget Travelers',
-    image: '/images/fleet/dzire.jpeg',
+    image: getAssetUrl('/images/fleet/dzire.jpeg'),
     rateNote: 'All Tolls, Fuel, State Taxes & Driver Charges Included',
   },
   {
@@ -227,7 +229,7 @@ export const CAB_OPTIONS = [
     category: 'Compact SUV (Spacious & Smooth)',
     capacity: '4-5 Passengers + 3 Bags',
     idealFor: 'Small Families & Extra Legroom for Couples',
-    image: '/images/fleet/ertiga.jpeg',
+    image: getAssetUrl('/images/fleet/ertiga.jpeg'),
     rateNote: 'Perfect for Mountain Hairpins & Snowy Ascents',
   },
   {
@@ -235,7 +237,7 @@ export const CAB_OPTIONS = [
     category: 'Luxury SUV (Ultimate Mountain Comfort)',
     capacity: '6-7 Passengers + 5 Bags',
     idealFor: 'VIP Luxury Travel, Supreme Comfort on Long Drives',
-    image: '/images/fleet/innova_crysta.jpeg',
+    image: getAssetUrl('/images/fleet/innova_crysta.jpeg'),
     rateNote: 'Captain Seats, Rear AC, Maximum Luggage Space',
   },
 ];

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, ShieldCheck, Heart } from 'lucide-react';
+import { getAssetUrl } from '../utils/asset';
 
 export const Footer: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/images/logo.png"
+                src={getAssetUrl('/images/logo.png')}
                 alt="Safar Sathi Logo"
                 className="h-12 w-auto object-contain"
               />

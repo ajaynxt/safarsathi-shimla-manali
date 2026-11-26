@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Heart, Sparkles, Compass } from 'lucide-react';
+import { getAssetUrl } from '../utils/asset';
 
 interface NavbarProps {
   onOpenBooking: (pkgTitle?: string) => void;
@@ -38,7 +39,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-3 group">
             <img
-              src="/images/logo.png"
+              src={getAssetUrl('/images/logo.png')}
               alt="Safar Sathi Travel Logo"
               className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
             />

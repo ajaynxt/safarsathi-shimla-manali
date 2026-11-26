@@ -1,6 +1,7 @@
 import React from 'react';
 import { Heart, Sparkles, ArrowRight, BedDouble, Utensils, Flower2, CarFront, Flame, Camera, CakeSlice } from 'lucide-react';
 import { HONEYMOON_PERKS } from '../data/packagesData';
+import { getAssetUrl } from '../utils/asset';
 
 interface HoneymoonProps {
   onOpenBooking: (pkgTitle?: string) => void;
@@ -78,7 +79,7 @@ export const HoneymoonSpecialSection: React.FC<HoneymoonProps> = ({ onOpenBookin
               <div className="space-y-4">
                 <div className="relative rounded-3xl overflow-hidden shadow-lg group">
                   <img
-                    src="/images/manali_wooden_suite.jpg"
+                    src={getAssetUrl('/images/manali_wooden_suite.jpg')}
                     alt="Cozy Wooden Honeymoon Suite Manali"
                     className="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -93,7 +94,7 @@ export const HoneymoonSpecialSection: React.FC<HoneymoonProps> = ({ onOpenBookin
 
                 <div className="relative rounded-3xl overflow-hidden shadow-lg group">
                   <img
-                    src="/images/mountain_dining.jpg"
+                    src={getAssetUrl('/images/mountain_dining.jpg')}
                     alt="Mountain Garden Dining in Himachal"
                     className="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -110,7 +111,7 @@ export const HoneymoonSpecialSection: React.FC<HoneymoonProps> = ({ onOpenBookin
               <div className="space-y-4 pt-6">
                 <div className="relative rounded-3xl overflow-hidden shadow-lg group">
                   <img
-                    src="/images/shimla_sunset_balcony.jpg"
+                    src={getAssetUrl('/images/shimla_sunset_balcony.jpg')}
                     alt="Sunset Cloud Balcony in Shimla"
                     className="w-full h-48 sm:h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -125,7 +126,7 @@ export const HoneymoonSpecialSection: React.FC<HoneymoonProps> = ({ onOpenBookin
 
                 <div className="relative rounded-3xl overflow-hidden shadow-lg group">
                   <img
-                    src="/images/pine_forest_terrace.jpg"
+                    src={getAssetUrl('/images/pine_forest_terrace.jpg')}
                     alt="Pine Forest Outdoor Cafe Terrace"
                     className="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
